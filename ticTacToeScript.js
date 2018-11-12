@@ -22,7 +22,7 @@ for(let i=0; i<cells.length; i++){
 			checkWin()
 			switchPlayer()
 		} 
-		else if(cells[i].innerHTML != ""){
+		else if(cells[i].innerHTML == symbol){
 			window.alert("Choose an empty box")
 		}
 	};

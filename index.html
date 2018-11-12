@@ -1,0 +1,195 @@
+<!DOCTYPE html> 
+<html>
+	<head>
+		<title>My Profile Page</title>
+		<!-- Link to CSS -->
+		<link rel="stylesheet" href="style.css"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- Link to Google font Open Sans and Roboto -->
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet"/>
+	</head>
+
+	<body>
+		<div id="heading">
+			<p>Welcome to my webpage<p>
+			
+			<!-- Navigation bar -->
+			<nav>
+				<ul>
+					<li>
+						<a href="#about-me"> About me </a>
+					</li>
+					<li>
+						<a href="#hobby"> Loves </a>
+					</li>
+					<li>
+						<a href="#gallery"> Gallery </a>
+					</li>
+					<li>
+						<a href="#contact"> Contact </a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+		
+		<!-- Article -->
+		<div class="container">
+			<article>
+				<!-- this is my h1 -->
+				<header id="intro">
+					<!-- This is my profile photo -->
+					<img src="./Image/myprofilepicture3.jpg" alt="image of Anna" />
+					<div class="text-left">
+						<h1>Anna's profile</h1>
+						<p>Investment banker. Home baker. Aspiring coder<p>
+					</div>
+				</header>
+				
+				<!-- About me Section -->
+				<section id="about-me">
+					<h2>About me</h2>
+					<p>	Hello there, I am <strong>Anna</strong>, a <em>social and an introvert</em>. <br> My idea of a good time is being with my girlfriends and my family where we would chat about everything and nothing over a delicious meal and bottle of wine.<br>Being a social introvert also means I need my me-time. During my me-time, you would find me engrossed in a page turner and enjoying a cuppa tea (chamomile preferred!).<br>My fascination with technology, and by extension programming, began after reading about Elon Musk and his dream of humankind on Mars. <br>This is my first attempt at coding and I am finding it <em>fun and addictive!</em> </p>
+				</section>
+
+				<!-- Hobby Section -->
+				<section id="hobby">
+					<div>
+						<h2>Loves</h2>
+						<img id="pink-heart" src="https://clipart.info/images/ccovers/1518056312pink-heart-transparent-background.png" alt="image of pink heart" />
+						<p>	In my free time, I love to <em> travel </em> and <em> bake </em>. One of my family's favourite is the orange and brandy butter cake.<br> To keep healthy and maintain my sanity, I practise <em> pilates </em> and go <em> hiking </em> regularly. </p>
+					</div>
+					<div id="favourite-place">
+						<p>My favourite places to visit...</p>
+						<table>
+							<tr>
+								<th> Country </th><th> City/Town </th>
+							</tr>
+							<tr>
+								<td> Greece </td><td> Santorini </td>
+							</tr>
+							<tr>
+								<td> Italy </td><td> Venice </td>
+							</tr>
+							<tr>
+								<td> Japan </td><td> Kyoto </td>
+							</tr>
+						</table>
+					</div>
+				</section>
+
+				<!--Gallery section -->
+				<section id="gallery">
+					<h2>Gallery</h2>
+					
+					<!-- Travel subsection-->
+					<div>
+						<h3>Explore the world</h3>
+						
+						<div class="clear">
+						<h4>Kyoto and Osaka, Japan</h4>
+							<div class="polaroid rotate-left">
+								<a href="https://www.japan-guide.com/e/e3915.html" target="_blank">
+								<img src="./image/Fushimi_inari.jpg" alt="image of Fushimi Inari" /></a>
+								<p class="caption">Fushimi inari shrine</p>
+							</div>
+							<div class="polaroid rotate-right">
+								<img src="./image/Golden_pavilion.jpg" alt="image of Golden Pavilion" />
+								<p class="caption">Golden pavilion</p>
+							</div>
+							<div class="polaroid rotate-left">
+								<img src="./image/Bamboo_forest.jpg" alt="image of Arashiyama garden" />
+								<p class="caption">Arashiyama bamboo forest</p>
+							</div>
+						</div>
+						
+						<div class="clear">
+						<h4>Seoul, Korea</h4>
+							<div class="polaroid rotate-right">
+								<img src="./image/Seoul_market.jpg" alt="image of Seoul market" />
+								<p class="caption">Local market</p>
+							</div>
+							<div class="polaroid rotate-left">
+								<img src="./image/Seoul_seafood.jpg" alt="image of seafood" />
+								<p class="caption">Seafood market</p>
+							</div>
+							<div class="polaroid rotate-right">
+								<img src="./image/Seoul_kimchi.jpg" alt="image of Korean kimchi soup" />
+								<p class="caption">Kimchi soup</p>
+							</div>
+						</div>
+					</div>
+
+					<!-- Baking subsection-->
+					<div class="clear">
+						<h3>Sweet stuff</h3>
+						<div class="polaroid rotate-left">
+							<img src="./image/Strawberry_cake.jpg" alt="image of strawberry cake" />
+							<p class="caption">Strawberry shortcake</p>
+						</div>
+						<div class="polaroid rotate-right">
+							<img src="./image/Fruit_cake.jpg" alt="image of fruit slices" />
+							<p class="caption">Summer fruit slices</p>
+						</div>
+						<div class="polaroid rotate-left">
+							<img src="https://scontent.fkul15-1.fna.fbcdn.net/v/t1.0-9/25660318_10159833472615486_3560744709930363752_n.jpg?_nc_cat=104&_nc_ht=scontent.fkul15-1.fna&oh=6eb7df43a83bf80a0bbb34896f607afb&oe=5C50D385" alt="image of cream puffs" />
+							<p class="caption">Cream puffs in the oven</p>
+						</div>												
+					</div>
+
+					<!-- Video subsection -->
+					<div class="clear">
+					<h3>Video</h3>
+						<p>Laughter is the best medicine</p>
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/msL-lsZMyQI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+					</div>
+				</section>
+
+				<!-- My contact section -->
+				<section id="contact">
+					<h2>Contact</h2>
+					<ul>
+						<li>
+							Tel: 016 383 5335
+						</li>
+						<li>
+							<a href="https://www.facebook.com/anna.l.liew" target="_blank"> <img id="facebook-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Facebook_logo_%28square%29.png/600px-Facebook_logo_%28square%29.png" alt="facebook link" ></a>
+						</li>
+					</ul>
+				</section>
+			</article>
+			
+			<!-- Sidebar -->
+			<aside>
+				<p>Let's play games</p>
+				<ul id="games">
+					<li>
+						<a href="./ticTacToeIndex.html" target="_blank"> <img id="tic-tac-toe" src="./image/ticTacToeImage.jpg" alt="tic tac toe"> </a>
+					</li>
+					<li>
+						<a href="./guessTagIndex.html" target="_blank"> <img id="guess-tag" src="./image/guessTagImage.jpg" alt="guess the city"> </a>
+					</li>
+
+					<!-- <li>
+						<img id=apple src="http://www.pngmart.com/files/1/Apple-Fruit-PNG-File.png" alt="image of red apple" />
+						<p>An apple a day keeps the doctor away</p>	
+					</li> -->
+				</ul>	
+			</aside>
+		
+			<div class="clear"></div>
+
+			<!-- Back to top -->
+			<div class="text-right">
+				<a href="#intro"> back to top </a>
+			</div>
+
+		</div>
+		
+		<!-- Footer -->
+		<footer class="clear">
+		Copyright &copy; please contact the <a href="mailto:anna.liew@gmail.com" target="_blank"> webmaster</a> for any issues with this website.
+		</footer>
+
+	</body>
+</html>

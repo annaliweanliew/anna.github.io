@@ -1,0 +1,52 @@
+
+
+body{
+	padding-left: 40px;
+	font-family: Arial, Helvetica, sans-serif; 
+}
+
+ul{
+	padding-left: 0px;
+}
+
+#tag-list li{
+	display: inline-block;
+	padding: 10px;
+}
+
+
+#photo-list li{
+	/*all li(s) will be displayed inline with the max width set*/
+	display: inline-block;
+	max-width: 200px;
+}
+
+li img{
+	/*each image will fill each li*/
+	width: 100%;
+	box-sizing: border-box;
+	padding: 5px;
+	vertical-align: middle;
+}
+
+button{
+	font-size: 20px;
+	padding: 5px 15px;
+	border-radius: 5px; 
+}
+
+/*#skyscraper{
+	background-color: lightblue;
+}
+
+#Japan{
+	background-color: orange;
+}
+
+#China{
+	background-color: pink;
+}
+
+#London{
+	background-color: yellow;
+}*/

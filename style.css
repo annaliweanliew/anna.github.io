@@ -1,0 +1,267 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6em; 
+  color: #484848;
+/*  border: 5px solid purple;*/
+  background-image: url("image/new_year_background.png"); 
+  /*This is CSS trick for tinted image*/
+  /*background: linear-gradient(rgba(184,207,216,0.2),rgba(184,207,216,0.2)),url("Image/new_year_background.png");*/
+  text-align: justify;
+  position: relative;
+}
+
+div#heading{
+	font-size: 1.2em;
+	font-family: 'Open Sans', sans-serif;
+	background-color: #8fa1a8;
+	color: white;	
+
+	width: 100%;
+	padding: 10px 20px 10px 20px;
+/*	border: 2px solid red;*/
+
+	/*Use flex*/
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	
+	/*Fixed position*/
+	position: fixed;
+	top: 0px;
+	left: 0px;
+
+	/*Box-sizing required with position fixed to ensure heading+padding+border is within browser*/
+	box-sizing: border-box;
+
+	/*heading always sits above*/
+	z-index: 999;
+}
+
+
+@media(max-width: 768px){
+	div#heading{
+	flex-direction: column;
+	display: block;	
+	}
+}
+
+div#heading nav{
+	padding-right: 40px;
+/*	border: 2px solid orange;*/
+}
+
+div#heading nav ul li{
+	display: inline-block;
+	margin-left: 5px;
+	margin-right: 5px;
+	align-items: center;
+}
+
+div#heading nav ul li a{
+	color: white;
+	text-decoration: none;
+}
+
+a:hover{
+	font-weight: bold;
+}
+
+div.container {
+  max-width: 1250px;
+  margin: 0 auto;
+/*  border: 2px solid blue;*/
+  width: 100%;
+}
+
+article {
+	max-width: 1000px;
+	float: left;
+/*	border: 2px solid green;*/
+	width: 100%;
+}
+
+aside {
+	font-size: 20px;
+	max-width: 150px;
+	width: 100%;
+	float: right;
+	margin: 100px 0px 20px 0px;
+	padding: 24px 36px;
+	/*border: 2px solid pink;*/
+	/*Position of item*/
+/*	display: flex;
+	flex-direction: column;
+	align-items: center;*/
+}
+
+#games {
+	padding-left: 0px;
+}
+#games li{
+	display: inline-block;
+	margin-left: 5px;
+	margin-right: 5px;
+	align-items: center;
+	/*border: solid red 2px;*/
+}
+
+
+
+@media(max-width: 1280px){
+	aside{
+		float: none;
+		flex-direction: row;
+		max-width: none;
+		box-sizing: border-box;
+	}
+}
+
+
+header{
+	background-image: linear-gradient(
+		#787878,#8fa1a8,#DBE7EB);
+	color: white; 
+	padding: 24px;
+	margin: 100px 0px 20px 0px;
+	font-size: 1.2em;
+	/*Use flex*/
+	display: flex;
+	justify-content: center; 
+	align-items: center;
+}
+
+header img{
+	height: 180px; 
+	width: 180px;
+	margin-right: 100px; 
+	/*Border radius of 50% of height and width will make a square image round*/
+	border-radius: 50px 0px 50px 0px;
+	float: right;
+}
+
+div.text-left {
+	text-align: left;
+}
+
+div.text-right {
+	text-align: right;
+}
+
+section#hobby {
+	display: flex;
+	justify-content: space-around;
+	align-items: baseline;
+}
+
+div#favourite-place {
+	margin: 0px 0px 20px 50px;
+}
+
+h1{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 2.5em;
+	line-height: 1em; 
+	color: white;
+}
+
+h2{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.8em;
+	color: #484848;
+	text-transform: uppercase;
+}
+
+h3{
+	font-family: 'Open Sans', sans-serif;
+	color: #484848;
+	text-decoration: underline;
+	margin: 40px 0px 15px 0px;
+}
+
+section {
+	background-color: white;
+	padding: 24px 36px;
+	margin-bottom: 20px;
+/*	border: 1.5px solid #8fa1a8;*/
+}
+
+footer {
+	padding: 0px 36px;
+	margin-bottom: 20px;
+}
+
+img{
+	width: 100%;
+	height: 82%;
+}
+
+img#pink-heart{
+	height: 110px;
+	width: 110px;
+	float: left;
+	margin: 0px 24px 10px 0px;
+}
+
+/*img#apple {
+	height: 120px; 
+	width: 120px;
+	margin: 10px;
+}
+*/
+img#tic-tac-toe {
+	height: 120px; 
+	width: 120px;
+	margin: 10px;
+}
+
+img#guess-tag {
+	height: 120px; 
+	width: 120px;
+	margin: 10px;
+}
+
+img#facebook-logo{
+	height: 20px;
+	width: 20px;
+}
+
+div.polaroid{
+	height: 230px;
+	width: 280px;
+	box-sizing: border-box;
+	padding: 8px;
+	float: left;
+	border: 1px solid #BFBFBF;
+	background-color: white;
+	box-shadow: 10px 10px 5px #aaaaaa;
+	margin: 0px 12px 36px 12px;
+}
+
+div.clear{
+	clear: both;
+}
+
+p.caption{
+	text-align: center;
+	margin: 0px 10px;
+}
+
+div.rotate-right{
+	transform: rotate(3deg)
+}
+
+div.rotate-left{
+	transform: rotate(-3deg);
+}
+
+table, th, td{
+	border: 2px solid lightgrey;
+	border-collapse: collapse;
+	padding: 6px 30px;
+	text-align: center;
+}
+
+th {
+	background-color: grey;
+	color: white;
+}

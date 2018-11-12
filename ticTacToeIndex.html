@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>tic tac toe</title>
+	
+	<style>
+
+		body{
+			margin: 0px;
+			padding-top: 20px;
+			text-align: center;
+			user-select: none;
+		}
+
+		div.cell{
+			border: 2px solid black;
+			display: inline-block;
+			width: 100px;
+			height: 100px;
+			line-height: 100px;
+			box-sizing: border-box;
+			margin: 0px;
+			text-align: center;
+			vertical-align: middle;
+			font-size: 70px;
+			user-select: none;
+			border-radius: 5px;
+		}	
+
+		#play-button{
+			width: 120px;
+			height: 30px;
+			background-color: blue;
+			font-size: 16px;
+			color: white;
+			margin-top: 20px;
+		}
+
+		#reset-button{
+			width: 120px;
+			height: 30px;
+			background-color: red;
+			font-size: 16px;
+			color: white;
+			margin-top: 20px;
+		}
+
+		.container{
+			display: inline-flex;
+			flex-wrap: wrap;
+			width:300px;
+		}
+
+		.winCount {
+			font-size: 20px;
+			border: 1px solid grey;
+			display: inline-block;
+			margin: 20px;
+			width: 220px;
+			border-radius: 5px;
+		}
+
+		.winCount h2{
+			margin: 0px;
+			padding: 10px;
+		}
+
+		.winCount p{
+			margin: 0px;
+			padding: 10px;
+		}
+
+	</style>
+</head>
+
+<body>
+	<h1>Let's play a game of tic tac toe</h1>
+
+	<div class="container">
+		<div id="0" class="cell"></div>
+		<div id="1" class="cell"></div>
+		<div id="2" class="cell"></div>
+		<br/>
+		<div id="3" class="cell"></div>
+		<div id="4" class="cell"></div>
+		<div id="5" class="cell"></div>
+		<br/>
+		<div id="6" class="cell"></div>
+		<div id="7" class="cell"></div>
+		<div id="8" class="cell"></div>
+	</div>
+	
+	<form >
+		<input id="play-button" type="button" value="Play Again">
+		<input id="reset-button" type="button" value="Reset">
+	</form>
+
+	<div class ="winCount">
+		<h2>Scoreboard</h2>
+		<p>Player 1 : <span id = "player1-win">0</span></p>
+		<p>Player 2 : <span id = "player2-win">0</span></p>
+	</div>
+
+	<script type="text/javascript" src="./ticTacToeScript.js">
+		
+	</script>
+
+</body>
+</html>
